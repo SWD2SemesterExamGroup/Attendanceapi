@@ -1,0 +1,23 @@
+{
+  "name": "attendanceapi",
+  "version": "0.0.1",
+  "description": "nodejsapi for attendance in an exam project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SWD2SemesterExamGroup/Attendanceapi.git"
+  },
+  "author": "hida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SWD2SemesterExamGroup/Attendanceapi/issues"
+  },
+  "homepage": "https://github.com/SWD2SemesterExamGroup/Attendanceapi#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+  }
+}
