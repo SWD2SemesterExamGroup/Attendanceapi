@@ -1,19 +1,23 @@
 var mysql = require('mysql');
+var config = require('../config.js').dbconfig;
+//var configH = require('../config.js').host;
+//var configP = require('../config.js').port;
+//var configU = require('../config.js').user;
+//var configD = require('../config.js').database;
 
-var pool = mysql.createPool({
-    host     : '127.0.0.1',
-    port      : '3306',
-    user     : 'root',
-    database : 'Attendance_DB'
+  let pool = mysql.createPool({
+    host: config.host,
+    port: config.post,
+    user: config.user,
+    database: config.database
   });
-   
+  
   pool.getConnection(function(err, connection) {
     if (err) {
       console.error('error connecting: ' + err.stack);
       return;
     }
-    }
-  );
+  });
 
   function insertAttendance(reqCourseID, reqStudentID, reqAttemptSuccess) {
     
@@ -30,7 +34,7 @@ var pool = mysql.createPool({
       //TimeStamp datetime
 
       // TODO: Maybe split into two diffrent getConnection.
-      
+
       pool.getConnection(function(err, connection) {
         
         if ((reqAttemptSuccess == 'true')) {
