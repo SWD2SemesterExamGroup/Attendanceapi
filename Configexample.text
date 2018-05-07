@@ -1,3 +1,7 @@
+name of file should be config.js
+after that everything under this comment can be copy pasted into the js 
+file.
+
 module.exports = {
     dbconfig : {
         host: '',
