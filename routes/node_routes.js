@@ -5,7 +5,7 @@ module.exports = function(app) {
     // create
     app.post('/insertcourseregistration', (req, res) => {
         // You'll create your note here.
-       db.insertAttendance(req.body.courseID, req.body.studentID, req.body.successA);
+       db.insertAttendance(req.body.CourseID, req.body.StudentID, req.body.successAttempt);
 
         console.log(req.body);
 
