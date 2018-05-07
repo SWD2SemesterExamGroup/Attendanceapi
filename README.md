@@ -17,7 +17,7 @@ Node.js
     * Application Port: 8000
 2. npm start in console and the api wil be running on a specefic port.
 
-## Request variable names:
+## Request variable names
 * CourseID
 * StudentID
 * successAttempt
