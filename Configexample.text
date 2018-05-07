@@ -1,0 +1,9 @@
+module.exports = {
+    dbconfig : {
+        host: '',
+        port: '',
+        user: '',
+        database: ''
+    }
+    
+}
