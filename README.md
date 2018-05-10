@@ -22,5 +22,8 @@ Node.js
 * StudentID
 * successAttempt
 
+## Paths
+* https://localhost:8000/insertcourseregistration
+
 ### Version
 - 0.0.1
