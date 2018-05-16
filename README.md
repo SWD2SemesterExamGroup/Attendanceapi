@@ -19,7 +19,7 @@ Node.js
 
 ## Paths
 * https://localhost:8000/insertcourseregistration
-param: CourseID, StudentID, successAttempt
+param: CourseID(int), StudentID(int), successAttempt(boolean)
 
 ### Version
 - 0.0.1
