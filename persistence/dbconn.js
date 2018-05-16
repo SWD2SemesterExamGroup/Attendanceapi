@@ -55,8 +55,27 @@ var config = require('../config.js').dbconfig;
         } 
       connection.release();
     });
-  }
+  };
+
+  function pings() {
+    return new Promise((resolve, reject) => {
+      
+      pool.getConnection(function(err, connection) {
+        connection.ping(function (err) {
+          if (err) {
+            reject(err);
+          } else {
+          console.log('Server responded to ping');
+          resolve(true);
+          }
+          
+        });
+    });
+    
+  });
+  };
 
   module.exports = {
-    insertAttendance: insertAttendance
+    insertAttendance: insertAttendance,
+    ping: pings
   };

@@ -27,6 +27,28 @@ module.exports = function(app) {
     
 
     // read
+    app.get('/health', (req, res) => {
+      let resu = db.ping();
+
+      resu.then(result => {
+        if(result) {
+          res.status(200).json({
+            success: true,
+            db: true,
+            message: 'both service and DB is up and running'
+            
+          });
+        }else {
+          res.status(200).json({
+            success: true,
+            db: false,
+            message: 'service is running but db is down'
+            
+          });
+        }
+      });
+      
+    });
     app.get('/get', (req, res) => {
 
       });
