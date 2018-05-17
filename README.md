@@ -20,12 +20,13 @@ Node.js
 ## Paths
 * http://localhost:8000/insertcourseregistration
 * responds:
-body.param: { CourseID: 'int', StudentID: 'int', successAttempt: 'boolean' }
+   * body.param: { CourseID: 'int', StudentID: 'int', successAttempt: 'boolean' }
 
 * http://localhost:8000/health
-* responds: success: boolean. always true if service is up
-            db: boolean. true if db up false if down
-            message: 'text'
+   * responds: 
+      * success: boolean. always true if service is up
+      * db: boolean. true if db up false if down
+      * message: 'text'
 
 
 ### Version
