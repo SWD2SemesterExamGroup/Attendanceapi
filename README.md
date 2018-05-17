@@ -23,11 +23,11 @@ Node.js
    * body.param: { CourseID: 'int', StudentID: 'int', successAttempt: 'boolean' }
 
 * http://localhost:8000/health
-   * responds: 
-      * success: boolean. always true if service is up
-      * db: boolean. true if db up false if down
-      * message: 'text'
+    * response:
+        * status code: 200
+        * success: boolean. always true if service is up
+        * db: boolean. true if db up false if down
+        * message: 'text'
 
-
-### Version
+## Version
 - 1.0.5
