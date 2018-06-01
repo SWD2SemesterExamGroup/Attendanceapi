@@ -19,10 +19,15 @@ Node.js
 
 ## Paths
 * http://localhost:8000/insertcourseregistration
-body.param: { CourseID: 'int', StudentID: 'int', successAttempt: 'boolean' }
+* responds:
+   * body.param: { CourseID: 'int', StudentID: 'int', successAttempt: 'boolean' }
 
 * http://localhost:8000/health
-Checks if the service and database is up and running, will return 200 as long as the service is up. but a false db boolean if the db is down.
+    * response:
+        * status code: 200
+        * success: boolean. always true if service is up
+        * db: boolean. true if db up false if down
+        * message: 'text'
 
-### Version
+## Version
 - 1.0.5
