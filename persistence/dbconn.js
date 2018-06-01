@@ -9,6 +9,7 @@ var config = require('../config.js').dbconfig;
     host: config.host,
     port: config.post,
     user: config.user,
+    password: config.password,
     database: config.database
   });
   
